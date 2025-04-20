@@ -1,0 +1,9 @@
+const app = require("express")();
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const { Configuration, OpenAIApi } = require("openai");
+const fs = require("fs");
+const path = require("path");
+const { exec } = require("child_process");
+const { v4: uuidv4 } = require("uuid");
+const { createServer } = require("http");
